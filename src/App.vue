@@ -20,6 +20,7 @@ import ElAside from 'element-plus/lib/el-aside'
 import ElMain from 'element-plus/lib/el-main'
 import ElHeader from 'element-plus/lib/el-header'
 import ByMenu from './components/menu'
+import api from './plugins/api'
 export default {
   components :{
     ElContainer,
@@ -32,6 +33,16 @@ export default {
     screenHeight: 0
   }),
   mounted() {
+    // api.get(`http://angrykitty.link:40439/v1/events`, {
+  
+    //       testApp:1
+        
+    // }).then(res => {
+    //   console.log(res)
+    // })
+    api.post(`http://angrykitty.link:40439/v1/events`, {
+      testApp:2
+    })
     this.screenHeight = document.documentElement.clientHeight 
     const _this = this
     window.onresize = function () { // 定义窗口大小变更通知事件
