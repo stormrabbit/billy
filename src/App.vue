@@ -20,7 +20,7 @@ import ElAside from 'element-plus/lib/el-aside'
 import ElMain from 'element-plus/lib/el-main'
 import ElHeader from 'element-plus/lib/el-header'
 import ByMenu from './components/menu'
-import api from './plugins/api'
+// import api from './plugins/api'
 export default {
   components :{
     ElContainer,
@@ -40,7 +40,7 @@ export default {
     // }).then(res => {
     //   console.log(res)
     // })
-    api.post(`http://angrykitty.link:40439/v1/events`, {
+    this.$api.post(`http://angrykitty.link:40439/v1/events`, {
       testApp:2
     })
     this.screenHeight = document.documentElement.clientHeight 
