@@ -11,10 +11,7 @@ module.exports = {
   productionSourceMap: false, // 是否在构建生产包时生成sourcdeMap
   chainWebpack: config => {
     config.resolve.alias
-      .set("@", resolve("src"))
-      .set("@v", resolve("src/views"))
-      .set("@c", resolve("src/components"))
-      .set("@u", resolve("src/utils"))
+      .set("@components", resolve("src/components"))
       .set("@services", resolve("src/services")); /* 别名配置 */
     config.optimization.runtimeChunk("single");
   },
