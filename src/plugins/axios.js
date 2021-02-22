@@ -51,6 +51,23 @@ axios.interceptors.response.use(
   }
 );
 export default {
+  put(url,query, data) {
+    const _params =camel2Line(data)
+    return new Promise((resolve, reject) => {
+      axios({
+          method: 'put',
+          url,
+          params: query,
+          data: qs.stringify(_params),
+        })
+        .then(res => {
+          resolve(res.data)
+        })
+        .catch(err => {
+          reject(err)
+        })
+    })
+  },
   post(url, data) {
     const _params =camel2Line(data)
     return new Promise((resolve, reject) => {
