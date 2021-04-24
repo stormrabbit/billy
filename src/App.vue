@@ -54,9 +54,6 @@ export default {
     // display: flex;
     height: 100%;
   }
-  .billy-main-page__main {
-    // flex: 1;
-  }
 }
   .el-header, .el-footer {
     background-color: #B3C0D1;
