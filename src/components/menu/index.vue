@@ -27,22 +27,22 @@ export default {
         title: "Dashboard",
         router: '/'
       },
-      {
-        title: "用户管理",
-        router: '/users'
-      },
-      {
-        title: "角色管理",
-        router: '/roles'
-      },
-      {
-        title: "权限管理",
-        router: '/athorities'
-      },
-      {
-        title: "资源管理",
-        router: '/endpoints'
-      },
+      // {
+      //   title: "用户管理",
+      //   router: '/users'
+      // },
+      // {
+      //   title: "角色管理",
+      //   router: '/roles'
+      // },
+      // {
+      //   title: "权限管理",
+      //   router: '/athorities'
+      // },
+      // {
+      //   title: "资源管理",
+      //   router: '/endpoints'
+      // },
     ],
   }),
   methods: {

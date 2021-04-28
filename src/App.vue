@@ -20,7 +20,7 @@ import ElAside from 'element-plus/lib/el-aside'
 import ElMain from 'element-plus/lib/el-main'
 import ElHeader from 'element-plus/lib/el-header'
 import ByMenu from '@components/menu'
-import {testPut} from '@services/test'
+import {testGet} from '@services/test'
 export default {
   components :{
     ElContainer,
@@ -33,7 +33,7 @@ export default {
     screenHeight: 0
   }),
   mounted() {
-    testPut()
+    testGet()
     this.screenHeight = document.documentElement.clientHeight 
     const _this = this
     window.onresize = function () { // 定义窗口大小变更通知事件
